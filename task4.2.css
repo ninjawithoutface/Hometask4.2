@@ -1,0 +1,48 @@
+body {box-sizing: border-box;
+:margin = 0 px;
+:padding = 0 px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;}
+
+.empty {
+    position:absolute;
+    box-sizing: border-box;
+    width: 30px;
+    height: 500px;
+    background: #333;
+    color: #fff;
+    font-size: 1.5em;
+    border: outset 3px darkgrey;
+    padding:15px 10px;
+    z-index: 1;
+    display:block;
+
+}
+.list {
+    position:absolute;
+    box-sizing: border-box;
+    width: 400px;
+    height: 500px;
+    background: #333;
+    color: #fff;
+    font-size: 1.5em;
+    border: outset 3px darkgrey;
+    padding:15px 10px;
+    z-index: 2;
+    display:none;
+
+}
+
+
+li:hover { background-color: orange;}
+
+.parent:hover > .list {display:block;
+transition: all 2s 0s ease;
+
+}
+
+li {list-style-type:none
+}
+
+li:before {content: "\272A";
+                  color:orange;
+padding-right: 10px;}
